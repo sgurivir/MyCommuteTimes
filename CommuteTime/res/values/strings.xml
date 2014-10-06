@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Commute Time</string>
+    <string name="setup_name">Setup</string>
+    <string name="work_address">Work address</string>
+    <string name="home_address">Home address</string>
+    <string name="enter_address">Next</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_info">Info</string>
+    <string name="disclaimer"> Refreshed :  </string>
+
+</resources>

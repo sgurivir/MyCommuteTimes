@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:icon="@drawable/traffic_active"
+    android:background="#FFFFFF"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:id="@+id/layoutBothCommutes"
+	android:orientation="vertical"
+	android:weightSum="100">
+	
+    	<LinearLayout android:layout_weight="50"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/linearLayoutA2B"	
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+		android:orientation="horizontal">
+			<TextView
+    		android:id="@+id/textViewA2B"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:textColor="#000000" />
+        </LinearLayout>
+
+    	<LinearLayout android:layout_weight="50"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/linearLayoutB2A"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+		android:orientation="horizontal">
+			<TextView
+    		android:id="@+id/textViewB2A"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:textColor="#000000"  />
+	    </LinearLayout>
+	    
+	</LinearLayout>
+
+</RelativeLayout>

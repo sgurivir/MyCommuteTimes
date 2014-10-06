@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:icon="@drawable/settings_active" 
+    android:title="@string/action_settings"
+    android:background="#FFFFFF"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:id="@+id/layoutBothCommutes"
+	android:orientation="vertical">
+	
+	   <LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:id="@+id/layoutBothCommutes"
+		android:orientation="horizontal">
+	
+	        <ImageView 
+             android:id="@+id/is_valid_A_icon"
+             android:src="@drawable/home"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            />
+           
+			<EditText
+    		 android:id="@+id/address_A"
+   		 	 android:layout_width="fill_parent"
+    		 android:layout_height="wrap_content"
+    		 android:hint="@string/home_address"
+    		 android:inputType="textNoSuggestions"/>
+    		 
+    	    <ImageView 
+             android:id="@+id/clear_address_A"
+             android:src="@drawable/ic_launcher"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            />
+    
+	   </LinearLayout>
+	
+	   <LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:id="@+id/layoutBothCommutes"
+		android:orientation="horizontal">
+	
+	        <ImageView 
+             android:id="@+id/is_valid_B_icon"
+             android:src="@drawable/factory"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            />
+           
+			<EditText
+    		 android:id="@+id/address_B"
+   		 	 android:layout_width="fill_parent"
+    		 android:layout_height="wrap_content"
+    		 android:hint="@string/work_address"
+    		 android:inputType="textNoSuggestions"/>
+     
+    	    <ImageView 
+             android:id="@+id/clear_address_B"
+             android:src="@drawable/ic_launcher"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            />
+		</LinearLayout>
+    
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/enter_address"
+    android:onClick="onFinishEnteringLocations"
+    />
+    
+	</LinearLayout>
+
+</RelativeLayout>
